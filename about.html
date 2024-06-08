@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <img src="img/papillon.jpg" alt="Logo de l'entreprise"> <!-- Insérer le logo -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Pages</a>
+                <ul class="submenu">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Blog</a></li>
+            <ul class="submenu">
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+            <li><a href="#">Shop</a></li>
+            <ul class="submenu">
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+            <li><a href="#" class="btn-contact">Contact us</a>
+
+        </ul>
+    </nav>
+
+    <section class="slideshow">
+        <div class="slide">
+            <img id="imgindex" src="img/og_6829.webp" alt="Image 1 about">
+            <button class="book-now" onclick="bookNow()" style="left: 15%;">Book Now</button>
+            <span class="hello-text">An Experience Like <br> No Other</span>
+            <span class="hello-text2">Royal Golf Club </span>
+
+
+        </div>
+
+        <div class="slide">
+            <img id="imgindex" src="img/20210316-maisons-france-confort-grande-maison-moderne-ternas-622.jpg"
+                alt="Image 2 about">
+            <button class="book-now" onclick="bookNow()">Book Now</button>
+            <span class="hello-text">Play Golf Like <br> A Pro</span>
+            <span class="hello-text2" style="left: 15%;">Royal Golf Club </span>
+
+
+        </div>
+        <div class="slide">
+            <img id="imgindex" src="img/GRIMAULT-3D_Photo-4.jpg" alt="Image 3 about">
+            <button class="book-now" onclick="bookNow()" style="left: 17%;">Book Now</button>
+            <span class="hello-text">Online Tee Time <br> Reservations</span>
+            <span class="hello-text2" style="left: 14%;">Royal Golf Club </span>
+
+        </div>
+    </section>
+
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+    <button class="next" onclick="nextImage()">&#10095;</button>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
